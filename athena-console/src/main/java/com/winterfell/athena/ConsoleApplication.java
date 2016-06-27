@@ -6,13 +6,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class AthenaApplication extends SpringBootServletInitializer {
+public class ConsoleApplication extends SpringBootServletInitializer {
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(AthenaApplication.class);
+		return application.sources(ConsoleApplication.class);
 	}
 
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(AthenaApplication.class, args);
+		SpringApplication.run(ConsoleApplication.class, args);
 	}
 }
